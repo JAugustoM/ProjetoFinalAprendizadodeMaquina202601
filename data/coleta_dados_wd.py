@@ -44,7 +44,7 @@ print("\n2. Buscando dados dos indicadores...")
 for cod, nome in indicadores.items():
     print(f" -> Baixando: {nome} ({cod})...")
     # Usando 'country' no singular
-    url = f"https://api.worldbank.org/v2/country/all/indicator/{cod}?format=json&date=2020:2025&per_page=5000"
+    url = f"https://api.worldbank.org/v2/country/all/indicator/{cod}?format=json&date=2010:2024&per_page=5000"
 
     res = requests.get(url)
 
